@@ -1,0 +1,13 @@
+{
+  "itemGroup.vaxysbackrooms": "Example Mod Tab",
+  "block.vaxysbackrooms.example_block": "Example Block",
+  "item.vaxysbackrooms.example_item": "Example Item",
+
+  "vaxysbackrooms.configuration.title": "Vaxy's Backrooms Configs",
+  "vaxysbackrooms.configuration.section.vaxysbackrooms.common.toml": "Vaxy's Backrooms Configs",
+  "vaxysbackrooms.configuration.section.vaxysbackrooms.common.toml.title": "Vaxy's Backrooms Configs",
+  "vaxysbackrooms.configuration.items": "Item List",
+  "vaxysbackrooms.configuration.logDirtBlock": "Log Dirt Block",
+  "vaxysbackrooms.configuration.magicNumberIntroduction": "Magic Number Text",
+  "vaxysbackrooms.configuration.magicNumber": "Magic Number"
+}
