@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "north": "vaxysbackrooms:block/level_0_wallpaper",
+    "south": "vaxysbackrooms:block/level_0_wallpaper",
+    "west": "vaxysbackrooms:block/level_0_wallpaper",
+    "east": "vaxysbackrooms:block/level_0_wallpaper",
+    "up": "vaxysbackrooms:block/level_0_wallpaper2",
+    "down": "vaxysbackrooms:block/level_0_wallpaper2",
+    "particle": "vaxysbackrooms:block/level_0_wallpaper"
+  }
+}
