@@ -1,8 +1,6 @@
 {
-  "parent": "minecraft:block/cube_bottom_top",
+  "parent": "minecraft:block/cube_all",
   "textures": {
-    "bottom": "vaxysbackrooms:block/level_0_wallpaper_bottom",
-    "side": "vaxysbackrooms:block/level_0_wallpaper_side",
-    "top": "vaxysbackrooms:block/level_0_wallpaper_top"
+    "all": "vaxysbackrooms:block/level_0_wallpaper"
   }
 }

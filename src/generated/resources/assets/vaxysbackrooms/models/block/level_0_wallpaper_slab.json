@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "vaxysbackrooms:block/level_0_wallpaper",
+    "side": "vaxysbackrooms:block/level_0_wallpaper",
+    "top": "vaxysbackrooms:block/level_0_wallpaper"
+  }
+}

@@ -8,6 +8,7 @@ import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
+import net.minecraft.core.registries.BuiltInRegistries;
 
 public class ModBlockStateProvider extends BlockStateProvider {
 
@@ -17,7 +18,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        blockWithDifferentSides(ModBlocks.LEVEL_0_WALLPAPER);
+        simpleBlock(ModBlocks.LEVEL_0_WALLPAPER);
         simpleBlock(ModBlocks.LEVEL_0_CARPET);
         slabBlock(ModBlocks.LEVEL_0_WALLPAPER_SLAB.get(), blockTexture(ModBlocks.LEVEL_0_WALLPAPER.get()),blockTexture(ModBlocks.LEVEL_0_WALLPAPER.get()));
 

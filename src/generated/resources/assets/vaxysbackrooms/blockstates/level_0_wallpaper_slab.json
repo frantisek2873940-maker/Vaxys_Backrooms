@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "vaxysbackrooms:block/level_0_wallpaper_slab"
+    },
+    "type=double": {
+      "model": "vaxysbackrooms:block/level_0_wallpaper"
+    },
+    "type=top": {
+      "model": "vaxysbackrooms:block/level_0_wallpaper_slab_top"
+    }
+  }
+}
