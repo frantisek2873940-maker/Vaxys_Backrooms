@@ -6,6 +6,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Portal;
+import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
@@ -19,11 +20,13 @@ public class ModBlocks {
 
 
     public static final DeferredBlock<Block> LEVEL_0_WALLPAPER = registerBlock("level_0_wallpaper",
-            ()-> new Block(BlockBehaviour.Properties.of().sound(SoundType.WOOD).strength(-1f).explosionResistance(360000)));
+            ()-> new Block(BlockBehaviour.Properties.of().sound(SoundType.WOOD).strength(-1f).explosionResistance(360000).noLootTable()));
 
     public static final DeferredBlock<Block> LEVEL_0_CARPET = registerBlock("level_0_carpet",
-            ()-> new Block(BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(-1f).explosionResistance(360000)));
+            ()-> new Block(BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(-1f).explosionResistance(360000).noLootTable()));
 
+    //public static final DeferredBlock<SlabBlock> LEVEL_0_WALLPAPER_SLAB = registerBlock("level_0_wallpaper_slab",
+            //()-> new SlabBlock(BlockBehaviour.Properties.of().sound(SoundType.WOOD).strength(-1f).explosionResistance(360000).noLootTable()));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock (String name, Supplier<T> block) {

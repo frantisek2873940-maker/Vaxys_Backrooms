@@ -1,6 +1,7 @@
 package com.vaxy.backroomsmod;
 
 import com.vaxy.backroomsmod.block.ModBlocks;
+import com.vaxy.backroomsmod.item.ModCreativeModeTabs;
 import com.vaxy.backroomsmod.item.ModItems;
 import foundry.veil.api.event.VeilPostProcessingEvent;
 import org.slf4j.Logger;
@@ -64,6 +65,8 @@ public class VaxysBackrooms {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -93,11 +96,9 @@ public class VaxysBackrooms {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(ModBlocks.LEVEL_0_WALLPAPER);
-            event.accept(ModBlocks.LEVEL_0_CARPET);
+
         }
     }
-
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
