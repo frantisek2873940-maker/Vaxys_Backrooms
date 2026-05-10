@@ -5,6 +5,7 @@ import com.vaxy.backroomsmod.block.ModBlocks;
 import com.vaxy.backroomsmod.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
+import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
 
@@ -18,6 +19,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         blockWithDifferentSides(ModBlocks.LEVEL_0_WALLPAPER);
         simpleBlock(ModBlocks.LEVEL_0_CARPET);
+        slabBlock(ModBlocks.LEVEL_0_WALLPAPER_SLAB.get(), blockTexture(ModBlocks.LEVEL_0_WALLPAPER.get()),blockTexture(ModBlocks.LEVEL_0_WALLPAPER.get()));
+
+        blockItem(ModBlocks.LEVEL_0_WALLPAPER);
+        blockItem(ModBlocks.LEVEL_0_CARPET);
+        blockItem(ModBlocks.LEVEL_0_WALLPAPER_SLAB);
+
     }
 
     private void simpleBlock(DeferredBlock<?> deferredBlock) {
@@ -39,5 +46,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 )
         );
     }
+    private void blockItem(DeferredBlock<?> deferredBlock) {
+        simpleBlockItem(deferredBlock.get(), new ModelFile.UncheckedModelFile("vaxysbackrooms:block/" + deferredBlock.getId().getPath()));
+    }
 
+    private void blockItem(DeferredBlock<?> deferredBlock, String appendix) {
+        simpleBlockItem(deferredBlock.get(), new ModelFile.UncheckedModelFile("vaxysbackrooms:block/" + deferredBlock.getId().getPath() + appendix));
+    }
 }

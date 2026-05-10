@@ -18,6 +18,5 @@ public class ModRecipeProvider extends RecipeProvider {
     }
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.LEVEL_0_WALLPAPER.get());
     }
 }

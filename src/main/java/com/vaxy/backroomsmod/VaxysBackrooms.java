@@ -35,7 +35,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-import static com.vaxy.backroomsmod.item.ModItems.EXAMPLE;
+//import static com.vaxy.backroomsmod.item.ModItems.EXAMPLE;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(VaxysBackrooms.MODID)

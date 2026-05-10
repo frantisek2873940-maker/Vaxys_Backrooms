@@ -21,7 +21,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.LEVEL_0_WALLPAPER);
                         output.accept(ModBlocks.LEVEL_0_CARPET);
-                        //output.accept(ModBlocks.LEVEL_0_WALLPAPER_SLAB);
+                        output.accept(ModBlocks.LEVEL_0_WALLPAPER_SLAB);
 
                     }).build());
 

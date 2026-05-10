@@ -9,8 +9,8 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(VaxysBackrooms.MODID);
 
-    public static final DeferredItem<Item> EXAMPLE = ITEMS.register("example",
-            ()-> new Item(new Item.Properties()));
+    //public static final DeferredItem<Item> EXAMPLE = ITEMS.register("example",
+            //()-> new Item(new Item.Properties()));
 
 
 
