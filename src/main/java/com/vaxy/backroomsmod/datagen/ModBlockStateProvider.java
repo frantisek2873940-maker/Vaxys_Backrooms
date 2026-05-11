@@ -4,6 +4,7 @@ import com.vaxy.backroomsmod.VaxysBackrooms;
 import com.vaxy.backroomsmod.block.ModBlocks;
 import com.vaxy.backroomsmod.item.ModItems;
 import net.minecraft.data.PackOutput;
+import net.minecraft.world.level.block.IronBarsBlock;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -18,17 +19,22 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        simpleBlock(ModBlocks.LEVEL_0_WALLPAPER);
-        simpleBlock(ModBlocks.LEVEL_0_CARPET);
+        simpleCubeBlock(ModBlocks.LEVEL_0_WALLPAPER);
+        simpleCubeBlock(ModBlocks.LEVEL_0_CARPET);
+        simpleCubeBlock(ModBlocks.LEVEL_0_CEALING);
+
+        paneBlock((IronBarsBlock) ModBlocks.LEVEL_0_CARPET_WALL.get(), modLoc("block/level_0_carpet"), modLoc("block/level_0_carpet_edge"));
+
         slabBlock(ModBlocks.LEVEL_0_WALLPAPER_SLAB.get(), blockTexture(ModBlocks.LEVEL_0_WALLPAPER.get()),blockTexture(ModBlocks.LEVEL_0_WALLPAPER.get()));
 
         blockItem(ModBlocks.LEVEL_0_WALLPAPER);
         blockItem(ModBlocks.LEVEL_0_CARPET);
         blockItem(ModBlocks.LEVEL_0_WALLPAPER_SLAB);
-
+        blockItem(ModBlocks.LEVEL_0_CEALING);
+        simpleBlockItem(ModBlocks.LEVEL_0_CARPET_WALL.get(), models().getExistingFile(modLoc("block/level_0_carpet_wall_post")));
     }
 
-    private void simpleBlock(DeferredBlock<?> deferredBlock) {
+    private void simpleCubeBlock(DeferredBlock<?> deferredBlock) {
         simpleBlockWithItem(deferredBlock.get(), cubeAll(deferredBlock.get()));
     }
     private void blockWithDifferentSides(DeferredBlock<?> deferredBlock) {

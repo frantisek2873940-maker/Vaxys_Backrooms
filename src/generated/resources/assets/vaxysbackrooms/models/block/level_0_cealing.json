@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "vaxysbackrooms:block/level_0_cealing"
+  }
+}

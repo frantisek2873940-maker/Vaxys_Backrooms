@@ -2,5 +2,8 @@
   "item.vaxysbackrooms.example": "Example",
   "block.vaxysbackrooms.level_0_wallpaper": "Level 0 wallpaper",
   "block.vaxysbackrooms.level_0_carpet": "Level 0 carpet",
-  "block.vaxysbackrooms.level_0_wallpaper_slab": "Level 0 wallpaper slab"
+  "block.vaxysbackrooms.level_0_wallpaper_slab": "Level 0 wallpaper slab",
+  "block.vaxysbackrooms.level_0_cealing": "Level 0 cealing tile",
+  "block.vaxysbackrooms.level_0_carpet_wall": "Level 0 thin beam"
+
 }
