@@ -4,15 +4,11 @@ import com.vaxy.backroomsmod.VaxysBackrooms;
 import com.vaxy.backroomsmod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Portal;
-import net.minecraft.world.level.block.SlabBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import com.vaxy.backroomsmod.block.custom.CarpetWallBlock;
 import java.util.function.Supplier;
 
 public class ModBlocks {
@@ -35,9 +31,9 @@ public class ModBlocks {
             registerBlock("level_0_cealing",
             ()-> new Block(BlockBehaviour.Properties.of().strength(-1f).explosionResistance(360000).noLootTable()));
 
-    public static final DeferredBlock<Block> LEVEL_0_CARPET_WALL =
+    public static final DeferredBlock<WallBlock> LEVEL_0_CARPET_WALL =
             BLOCKS.register("level_0_carpet_wall",
-                    () -> new CarpetWallBlock(BlockBehaviour.Properties.of().strength(-1f).explosionResistance(360000).noOcclusion().noLootTable()));
+                    () -> new WallBlock(BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(-1f).explosionResistance(360000).noLootTable().noOcclusion()));
 
 
 

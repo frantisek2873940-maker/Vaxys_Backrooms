@@ -1,7 +1,6 @@
 {
-  "parent": "minecraft:block/template_glass_pane_side",
+  "parent": "minecraft:block/template_wall_side",
   "textures": {
-    "edge": "vaxysbackrooms:block/level_0_carpet_edge",
-    "pane": "vaxysbackrooms:block/level_0_carpet"
+    "wall": "vaxysbackrooms:block/level_0_carpet_wall"
   }
 }

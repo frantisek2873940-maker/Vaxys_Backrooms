@@ -3,74 +3,87 @@
     {
       "apply": {
         "model": "vaxysbackrooms:block/level_0_carpet_wall_post"
-      }
-    },
-    {
-      "apply": {
-        "model": "vaxysbackrooms:block/level_0_carpet_wall_side"
       },
       "when": {
-        "north": "true"
-      }
-    },
-    {
-      "apply": {
-        "model": "vaxysbackrooms:block/level_0_carpet_wall_noside"
-      },
-      "when": {
-        "north": "false"
-      }
-    },
-    {
-      "apply": {
-        "model": "vaxysbackrooms:block/level_0_carpet_wall_side_alt"
-      },
-      "when": {
-        "south": "true"
-      }
-    },
-    {
-      "apply": {
-        "model": "vaxysbackrooms:block/level_0_carpet_wall_noside_alt",
-        "y": 90
-      },
-      "when": {
-        "south": "false"
-      }
-    },
-    {
-      "apply": {
-        "model": "vaxysbackrooms:block/level_0_carpet_wall_side_alt",
-        "y": 90
-      },
-      "when": {
-        "west": "true"
-      }
-    },
-    {
-      "apply": {
-        "model": "vaxysbackrooms:block/level_0_carpet_wall_noside",
-        "y": 270
-      },
-      "when": {
-        "west": "false"
+        "up": "true"
       }
     },
     {
       "apply": {
         "model": "vaxysbackrooms:block/level_0_carpet_wall_side",
+        "uvlock": true,
         "y": 90
       },
       "when": {
-        "east": "true"
+        "east": "low"
       }
     },
     {
       "apply": {
-        "model": "vaxysbackrooms:block/level_0_carpet_wall_noside_alt"
+        "model": "vaxysbackrooms:block/level_0_carpet_wall_side_tall",
+        "uvlock": true,
+        "y": 90
       },
       "when": {
-        "east": "false"
+        "east": "tall"
+      }
+    },
+    {
+      "apply": {
+        "model": "vaxysbackrooms:block/level_0_carpet_wall_side",
+        "uvlock": true
+      },
+      "when": {
+        "north": "low"
+      }
+    },
+    {
+      "apply": {
+        "model": "vaxysbackrooms:block/level_0_carpet_wall_side_tall",
+        "uvlock": true
+      },
+      "when": {
+        "north": "tall"
+      }
+    },
+    {
+      "apply": {
+        "model": "vaxysbackrooms:block/level_0_carpet_wall_side",
+        "uvlock": true,
+        "y": 180
+      },
+      "when": {
+        "south": "low"
+      }
+    },
+    {
+      "apply": {
+        "model": "vaxysbackrooms:block/level_0_carpet_wall_side_tall",
+        "uvlock": true,
+        "y": 180
+      },
+      "when": {
+        "south": "tall"
+      }
+    },
+    {
+      "apply": {
+        "model": "vaxysbackrooms:block/level_0_carpet_wall_side",
+        "uvlock": true,
+        "y": 270
+      },
+      "when": {
+        "west": "low"
+      }
+    },
+    {
+      "apply": {
+        "model": "vaxysbackrooms:block/level_0_carpet_wall_side_tall",
+        "uvlock": true,
+        "y": 270
+      },
+      "when": {
+        "west": "tall"
       }
     }
   ]

@@ -17,13 +17,16 @@ public class ModCreativeModeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, VaxysBackrooms.MODID);
 
     public static final Supplier<CreativeModeTab> BACKROOMS_TAB = CREATIVE_MODE_TAB.register("backrooms_tab",
-            ()-> new CreativeModeTab.Builder(CreativeModeTab.Row.TOP, 0).icon(()-> new ItemStack(ModBlocks.LEVEL_0_WALLPAPER)).title(Component.translatable("Vaxy's backrooms"))
+            () -> new CreativeModeTab.Builder(CreativeModeTab.Row.TOP, 0)
+                    .icon(() -> new ItemStack(ModBlocks.LEVEL_0_WALLPAPER.get()))
+                    .title(Component.translatable("itemgroup.vaxysbackrooms"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModBlocks.LEVEL_0_WALLPAPER);
-                        output.accept(ModBlocks.LEVEL_0_CARPET);
-                        output.accept(ModBlocks.LEVEL_0_WALLPAPER_SLAB);
-                        output.accept(ModBlocks.LEVEL_0_CEALING);
-                        output.accept(ModBlocks.LEVEL_0_CARPET_WALL);
+
+                        output.accept(ModBlocks.LEVEL_0_WALLPAPER.get());
+                        output.accept(ModBlocks.LEVEL_0_WALLPAPER_SLAB.get());
+                        output.accept(ModBlocks.LEVEL_0_CARPET.get());
+                        output.accept(ModBlocks.LEVEL_0_CEALING.get());
+                        output.accept(ModBlocks.LEVEL_0_CARPET_WALL.get());
 
                     }).build());
 

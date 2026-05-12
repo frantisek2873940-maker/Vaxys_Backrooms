@@ -18,7 +18,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-        tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(ModBlocks.LEVEL_0_WALLPAPER.get());
+        tag(BlockTags.WALLS)
+        .add(ModBlocks.LEVEL_0_CARPET_WALL.get());
     }
 }
