@@ -24,17 +24,17 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleCubeBlock(ModBlocks.LEVEL_0_WALLPAPER);
         simpleCubeBlock(ModBlocks.LEVEL_0_CARPET);
         simpleCubeBlock(ModBlocks.LEVEL_0_CEALING);
+        simpleCubeBlock(ModBlocks.LEVEL_0_LAMP);
 
         slabBlock(ModBlocks.LEVEL_0_WALLPAPER_SLAB.get(), blockTexture(ModBlocks.LEVEL_0_WALLPAPER.get()),blockTexture(ModBlocks.LEVEL_0_WALLPAPER.get()));
 
-        wallBlock((WallBlock) ModBlocks.LEVEL_0_CARPET_WALL.get(), blockTexture(ModBlocks.LEVEL_0_CARPET_WALL.get()));
+
 
         blockItem(ModBlocks.LEVEL_0_WALLPAPER);
         blockItem(ModBlocks.LEVEL_0_CARPET);
         blockItem(ModBlocks.LEVEL_0_WALLPAPER_SLAB);
         blockItem(ModBlocks.LEVEL_0_CEALING);
-        blockItem(ModBlocks.LEVEL_0_CARPET_WALL);
-        simpleBlockItem(ModBlocks.LEVEL_0_CARPET_WALL.get(), models().wallInventory("level_0_carpet_wall_inventory", modLoc("block/level_0_carpet")));
+        blockItem(ModBlocks.LEVEL_0_LAMP);
 
     }
 

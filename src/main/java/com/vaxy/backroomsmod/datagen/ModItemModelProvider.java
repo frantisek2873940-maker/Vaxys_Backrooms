@@ -17,7 +17,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        wallItem(ModBlocks.LEVEL_0_CARPET_WALL, ModBlocks.LEVEL_0_CARPET);
+
     }
 
     public void buttonItem(DeferredBlock<?> block, DeferredBlock<Block> baseBlock) {

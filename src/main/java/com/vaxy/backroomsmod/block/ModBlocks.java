@@ -31,9 +31,11 @@ public class ModBlocks {
             registerBlock("level_0_cealing",
             ()-> new Block(BlockBehaviour.Properties.of().strength(-1f).explosionResistance(360000).noLootTable()));
 
-    public static final DeferredBlock<WallBlock> LEVEL_0_CARPET_WALL =
-            BLOCKS.register("level_0_carpet_wall",
-                    () -> new WallBlock(BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(-1f).explosionResistance(360000).noLootTable().noOcclusion()));
+    public static final DeferredBlock<Block> LEVEL_0_LAMP =
+            registerBlock("level_0_lamp",
+            ()-> new Block(BlockBehaviour.Properties.of().strength(-1f).explosionResistance(360000).noLootTable().lightLevel(level_0_lamp -> 15)));
+
+
 
 
 
